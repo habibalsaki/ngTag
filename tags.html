@@ -1,0 +1,13 @@
+<form>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Enter Tags</label>
+    <input type="text" class="form-control" id="exampleInputTag" placeholder="Enter Tags" autocomplete="on" ng-model="check_tags" list="tags">
+
+    <datalist id="tags">
+        <option ng-repeat="tag in tagData" value="{{ tag.name }}">
+    </datalist>
+    <div id="taglist">
+
+    </div>
+  </div>
+</form>
